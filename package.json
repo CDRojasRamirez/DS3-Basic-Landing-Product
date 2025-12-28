@@ -1,0 +1,19 @@
+{
+  "name": "amp-6-1427200-4",
+  "version": "1.0.0",
+  "description": "Página responsive del producto AMP 6-1427200-4",
+  "main": "6-1427200-4.html",
+  "scripts": {
+    "start": "npx http-server -p 8000",
+    "dev": "npx http-server -p 8000 -o"
+  },
+  "keywords": [
+    "responsive",
+    "product-page",
+    "amp",
+    "cable-utp"
+  ],
+  "author": "Daniel Rojas",
+  "license": "ISC"
+}
+

@@ -1,0 +1,182 @@
+<nav class="bg-white/95 backdrop-blur-md border-b border-gray-200/60 sticky top-16 z-40 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Desktop Navbar -->
+    <div class="hidden lg:flex items-center justify-between py-3">
+      <!-- Contact Info -->
+      <div class="flex items-center gap-6">
+        <a href="tel:+51994428965" class="flex items-center gap-2 text-sm text-gray-700 hover:text-primary-600 transition-colors group">
+          <i class="fa-solid fa-phone text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <div>
+            <div class="font-semibold">533-4339</div>
+            <div class="text-xs text-gray-500">994-428-965</div>
+          </div>
+        </a>
+        <a href="tel:+51996533223" class="flex items-center gap-2 text-sm text-gray-700 hover:text-primary-600 transition-colors group">
+          <i class="fa-solid fa-phone text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <div>
+            <div class="font-semibold">99653-3223</div>
+            <div class="text-xs text-gray-500">937-514-867</div>
+          </div>
+        </a>
+        <a href="mailto:netperu100@hotmail.com" class="flex items-center gap-2 text-sm text-gray-700 hover:text-primary-600 transition-colors group">
+          <i class="fa-solid fa-envelope text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <span class="font-semibold">netperu100@hotmail.com</span>
+        </a>
+        <div class="flex items-center gap-2 text-sm text-gray-700">
+          <i class="fa-solid fa-map-marker-alt text-primary-500"></i>
+          <span class="font-semibold">Lima, PERÚ</span>
+        </div>
+      </div>
+
+      <!-- Search Button -->
+      <button id="search-button" 
+              class="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-700 hover:text-primary-600">
+        <i class="fas fa-search text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navbar -->
+    <div class="lg:hidden">
+      <div class="flex items-center justify-between py-2">
+        <div class="flex items-center gap-2">
+          <button id="mobile-menu-button" 
+                  class="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-700">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <button id="mobile-search-button" 
+                class="p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-700 border border-gray-200">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="flex items-center gap-4 pb-3 text-xs text-gray-600">
+        <a href="tel:+51994428965" class="flex items-center gap-1 hover:text-primary-600 transition-colors">
+          <i class="fa-solid fa-phone text-primary-500"></i>
+          <span>994428965</span>
+        </a>
+        <a href="tel:+51996533223" class="flex items-center gap-1 hover:text-primary-600 transition-colors">
+          <i class="fa-solid fa-phone text-primary-500"></i>
+          <span>996533223</span>
+        </a>
+        <a href="mailto:netperu100@hotmail.com" class="flex items-center gap-1 hover:text-primary-600 transition-colors">
+          <i class="fa-solid fa-envelope text-primary-500"></i>
+          <span class="truncate">netperu100@hotmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" 
+       class="fixed top-0 left-0 h-full w-80 bg-white shadow-2xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto custom-scrollbar">
+    <div class="p-4 border-b border-gray-200 flex items-center justify-between">
+      <h3 class="font-bold text-gray-900">Menú</h3>
+      <button id="close-menu" class="p-2 rounded-lg hover:bg-gray-100 text-gray-500 hover:text-gray-700 transition-colors">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+    </div>
+
+    <div class="p-4 space-y-4">
+      <!-- Lista de Precios -->
+      <details class="group">
+        <summary class="flex items-center justify-between p-3 cursor-pointer hover:bg-gray-50 rounded-lg transition-colors list-none">
+          <span class="font-semibold text-gray-800">Lista de Precios</span>
+          <i class="fa-solid fa-chevron-down text-gray-400 text-xs transform transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="mt-2 space-y-1 pl-4">
+          <a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" 
+             target="_blank"
+             class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 text-sm text-gray-700 hover:text-primary-600 transition-colors">
+            <i class="fa-solid fa-file-invoice text-primary-500 text-xs"></i>
+            <span>Lista de precios AMP</span>
+          </a>
+          <a href="https://www.ds3comunicaciones.com/amphenol/precios_amphenol.html" 
+             target="_blank"
+             class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 text-sm text-gray-700 hover:text-primary-600 transition-colors">
+            <i class="fa-solid fa-file-invoice text-primary-500 text-xs"></i>
+            <span>Lista de precios Amphenol</span>
+          </a>
+          <a href="https://www.ds3comunicaciones.com/panduit/precios_panduit.html" 
+             target="_blank"
+             class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-50 text-sm text-gray-700 hover:text-primary-600 transition-colors">
+            <i class="fa-solid fa-file-invoice text-primary-500 text-xs"></i>
+            <span>Lista de precios Panduit</span>
+          </a>
+        </div>
+      </details>
+
+      <!-- Marcas -->
+      <details class="group">
+        <summary class="flex items-center justify-between p-3 cursor-pointer hover:bg-gray-50 rounded-lg transition-colors list-none">
+          <span class="font-semibold text-gray-800">Marcas</span>
+          <i class="fa-solid fa-chevron-down text-gray-400 text-xs transform transition-transform group-open:rotate-180"></i>
+        </summary>
+        <div class="mt-2 grid grid-cols-2 gap-2 pl-4">
+          <a href="https://www.ds3comunicaciones.com/AMP/index.html" 
+             class="flex items-center justify-center p-3 rounded-lg hover:bg-gray-50 transition-all hover:scale-105">
+            <img src="http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" 
+                 alt="AMP" class="max-w-full h-6 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+          </a>
+          <a href="https://www.ds3comunicaciones.com/amphenol/index.html" 
+             class="flex items-center justify-center p-3 rounded-lg hover:bg-gray-50 transition-all hover:scale-105">
+            <img src="http://www.ds3comunicaciones.com/belden/images/amphenol_logo-100x21.jpg" 
+                 alt="Amphenol" class="max-w-full h-6 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+          </a>
+        </div>
+      </details>
+
+      <!-- Contacto -->
+      <div class="pt-4 border-t border-gray-200">
+        <h4 class="font-semibold text-gray-800 mb-3">Contacto</h4>
+        <div class="space-y-2 text-sm">
+          <a href="tel:+51994428965" class="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition-colors">
+            <i class="fa-solid fa-phone text-primary-500"></i>
+            <span>994-428-965</span>
+          </a>
+          <a href="mailto:netperu100@hotmail.com" class="flex items-center gap-2 text-gray-600 hover:text-primary-600 transition-colors">
+            <i class="fa-solid fa-envelope text-primary-500"></i>
+            <span>netperu100@hotmail.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Overlay -->
+  <div id="menu-overlay" 
+       class="fixed inset-0 bg-black/50 z-40 hidden backdrop-blur-sm"></div>
+
+  <!-- Search Modal -->
+  <section id="search-modal" 
+           class="fixed top-0 left-0 right-0 bottom-0 h-screen w-full px-5 pt-7 anim none z-50"
+           style="background-color: rgba(0, 0, 0, 0.575); backdrop-filter: blur(4px);">
+    <div class="max-w-[600px] mx-auto flex gap-2 justify-between">
+      <form name="form1" 
+            method="get" 
+            action="https://www.ds3comunicaciones.com/find.html"
+            class="mx-auto flex items-center justify-between px-1 border-2 border-white/20 w-full rounded-xl bg-white/95 backdrop-blur-md shadow-xl">
+        <div class="flex items-center w-full">
+          <i class="fa-solid fa-magnifying-glass ps-4 text-gray-500"></i>
+          <input name="q" 
+                 type="text" 
+                 class="outline-none px-4 py-4 w-full bg-transparent placeholder-gray-400"
+                 placeholder="Buscar productos..." 
+                 required />
+        </div>
+        <input type="hidden" name="cx" value="partner-pub-9265252540298851:f2549i3fi60" />
+        <input type="hidden" name="cof" value="FORID:10" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <button type="submit" 
+                name="sa"
+                class="cursor-pointer px-6 py-4 rounded-r-xl text-sm font-medium relative flex items-center bg-primary-600 text-white hover:bg-primary-700 transition-colors">
+          <span>Buscar</span>
+          <i class="fa-solid fa-caret-right ml-2"></i>
+        </button>
+      </form>
+      <button id="close-search" 
+              class="cursor-pointer text-white text-2xl flex items-center justify-center w-[42px] h-[42px] rounded-lg font-medium hover:bg-white/10 transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </section>
+</nav>
