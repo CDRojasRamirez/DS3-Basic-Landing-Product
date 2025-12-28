@@ -276,9 +276,9 @@
 
                 <!-- Price Section -->
                 <div class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-xl p-6 border border-primary-100">
-                  <div class="flex items-baseline gap-3 mb-4">
-                    <span class="text-4xl font-bold text-primary-600">U$ 187.00</span>
-                    <span class="text-gray-600">por rollo</span>
+                  <div class="flex items-center gap-3 mb-4 flex-wrap">
+                    <span class="text-4xl font-bold text-primary-600 whitespace-nowrap">U$ 187.00</span>
+                    <span class="text-gray-600 whitespace-nowrap">por rollo</span>
                   </div>
                   <a href="https://www.ds3comunicaciones.com/pedido.html"
                      target="_blank"
@@ -596,10 +596,14 @@
       const navbar = document.querySelector('nav[class*="backdrop-blur-md"]');
       const breadcrumb = document.getElementById('breadcrumb-nav');
       
-      if (header && navbar && breadcrumb) {
-        const headerHeight = header.offsetHeight;
-        const navbarHeight = navbar.offsetHeight;
-        const totalHeight = headerHeight + navbarHeight;
+      if (header && breadcrumb) {
+        let totalHeight = header.offsetHeight;
+        
+        // Solo agregar altura del navbar si está visible (desktop)
+        if (navbar && window.getComputedStyle(navbar).display !== 'none') {
+          totalHeight += navbar.offsetHeight;
+        }
+        
         breadcrumb.style.top = totalHeight + 'px';
       }
     }
